@@ -1,8 +1,8 @@
 //
 //  Appsee.h
-//  Appsee v2.3.6
+//  Appsee v2.4.1
 //
-//  Copyright (c) 2017 Shift 6 Ltd. All rights reserved.
+//  Copyright (c) 2018 Shift 6 Ltd. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -28,9 +28,16 @@
  **************/
 
 /** Starts recording screen and user gestures. This method should only be called once.
-    Recording will stop (and video will be uploaded) when app is in the background.
-    A new session will start when the app is returned from background.
- @param apiKey The application-specific API key from (available in your Appsee dashboard).
+ * Recording will stop (and video will be uploaded) when app is in the background.
+ * A new session will start when the app is returned from background.
+ * Apps using this method should place their API key in the main bundle's Info.plist file, under the "com.appsee.ApiKey" entry.
+*/
++(void)start;
+
+/** Starts recording screen and user gestures. This method should only be called once.
+ * Recording will stop (and video will be uploaded) when app is in the background.
+ * A new session will start when the app is returned from background.
+ * @param apiKey The application-specific API key from (available in your Appsee dashboard).
  */
 +(void)start:(NSString*) apiKey;
 
@@ -81,6 +88,13 @@
 * @return a boolean value stating whether current device is opted-out.
 */
 +(BOOL)getOptOutStatus;
+
+/** Delete all local and remote data for the current user. This method also unsets the current active user, and opts out this device from future tracking.
+ Note: this method performs a synchronous call to the Appsee servers and is therefore recommended to be performed on a side thread.
+ @return a boolean value stating whether deletion was successful. Failure may occur in case the Appsee servers cannot be reached (in case there is no connectivity) - and the method should be retried.
+ */
++(BOOL)deleteCurrentUserData;
+
 
 /****************************
  Application Events & Screens
@@ -133,7 +147,7 @@
 
 /** Set the user's location.
  @param description The location's description.
-*/
+ */
 +(void)setLocationDescription:(NSString*)description;
 
 /****************
@@ -196,8 +210,6 @@ This method should be usually called right after the start: method.
  * @param delegate an instance of AppseeDelegate
  */
 +(void)setDelegate:(id<AppseeDelegate>)delegate;
-
-
 
 @end
 
