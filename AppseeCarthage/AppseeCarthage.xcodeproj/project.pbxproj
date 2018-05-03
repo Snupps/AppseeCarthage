@@ -330,6 +330,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/AppseeCarthage/Library",
 				);
+				OTHER_LDFLAGS = (
+					"$(Inherited)",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.snupps.AppseeCarthage;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -353,6 +357,10 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/AppseeCarthage/Library",
+				);
+				OTHER_LDFLAGS = (
+					"$(Inherited)",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.snupps.AppseeCarthage;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
