@@ -13,7 +13,6 @@
 		F325F6C71F94C9E300FB283A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F325F6C61F94C9E300FB283A /* CoreGraphics.framework */; };
 		F325F6C91F94C9E800FB283A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F325F6C81F94C9E800FB283A /* AVFoundation.framework */; };
 		F325F6CB1F94C9EE00FB283A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F325F6CA1F94C9EE00FB283A /* SystemConfiguration.framework */; };
-		F325F6CD1F94CA0900FB283A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F325F6CC1F94CA0800FB283A /* libz.tbd */; };
 		F325F6D21F94CA5B00FB283A /* Appsee in Frameworks */ = {isa = PBXBuildFile; fileRef = F325F6D11F94CA5100FB283A /* Appsee */; };
 		F325F6D31F94CA6000FB283A /* Appsee.h in Headers */ = {isa = PBXBuildFile; fileRef = F325F6D01F94CA5100FB283A /* Appsee.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F325F6D61F94CA7C00FB283A /* AppseeCarthage.m in Sources */ = {isa = PBXBuildFile; fileRef = F325F6D41F94CA7C00FB283A /* AppseeCarthage.m */; };
@@ -29,7 +28,6 @@
 		F325F6C61F94C9E300FB283A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F325F6C81F94C9E800FB283A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F325F6CA1F94C9EE00FB283A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		F325F6CC1F94CA0800FB283A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		F325F6D01F94CA5100FB283A /* Appsee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Appsee.h; sourceTree = "<group>"; };
 		F325F6D11F94CA5100FB283A /* Appsee */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = Appsee; sourceTree = "<group>"; };
 		F325F6D41F94CA7C00FB283A /* AppseeCarthage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppseeCarthage.m; sourceTree = "<group>"; };
@@ -41,7 +39,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F325F6CD1F94CA0900FB283A /* libz.tbd in Frameworks */,
 				F325F6CB1F94C9EE00FB283A /* SystemConfiguration.framework in Frameworks */,
 				F325F6C91F94C9E800FB283A /* AVFoundation.framework in Frameworks */,
 				F325F6C71F94C9E300FB283A /* CoreGraphics.framework in Frameworks */,
@@ -86,7 +83,6 @@
 		F325F6BF1F94C9D300FB283A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F325F6CC1F94CA0800FB283A /* libz.tbd */,
 				F325F6CA1F94C9EE00FB283A /* SystemConfiguration.framework */,
 				F325F6C81F94C9E800FB283A /* AVFoundation.framework */,
 				F325F6C61F94C9E300FB283A /* CoreGraphics.framework */,
@@ -153,7 +149,7 @@
 		F325F6A91F94C8A400FB283A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Peyman Khanjan";
 				TargetAttributes = {
 					F325F6B11F94C8A400FB283A = {
@@ -215,6 +211,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -222,6 +219,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -275,6 +273,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -282,6 +281,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -333,6 +333,7 @@
 				OTHER_LDFLAGS = (
 					"$(Inherited)",
 					"-ObjC",
+					"-lz",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.snupps.AppseeCarthage;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -361,6 +362,7 @@
 				OTHER_LDFLAGS = (
 					"$(Inherited)",
 					"-ObjC",
+					"-lz",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.snupps.AppseeCarthage;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
