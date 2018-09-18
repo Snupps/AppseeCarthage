@@ -1,6 +1,6 @@
 //
 //  Appsee.h
-//  Appsee v2.4.1
+//  Appsee v2.4.4
 //
 //  Copyright (c) 2018 Shift 6 Ltd. All rights reserved.
 //
@@ -13,6 +13,7 @@
 #import <CoreVideo/CoreVideo.h>
 #import <QuartzCore/QuartzCore.h>
 #import <SystemConfiguration/SystemConfiguration.h>
+#import <Security/Security.h>
 
 @protocol AppseeDelegate;
 
