@@ -13,10 +13,10 @@
 		F325F6C71F94C9E300FB283A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F325F6C61F94C9E300FB283A /* CoreGraphics.framework */; };
 		F325F6C91F94C9E800FB283A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F325F6C81F94C9E800FB283A /* AVFoundation.framework */; };
 		F325F6CB1F94C9EE00FB283A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F325F6CA1F94C9EE00FB283A /* SystemConfiguration.framework */; };
-		F325F6D21F94CA5B00FB283A /* Appsee in Frameworks */ = {isa = PBXBuildFile; fileRef = F325F6D11F94CA5100FB283A /* Appsee */; };
-		F325F6D31F94CA6000FB283A /* Appsee.h in Headers */ = {isa = PBXBuildFile; fileRef = F325F6D01F94CA5100FB283A /* Appsee.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F325F6D61F94CA7C00FB283A /* AppseeCarthage.m in Sources */ = {isa = PBXBuildFile; fileRef = F325F6D41F94CA7C00FB283A /* AppseeCarthage.m */; };
 		F325F6D71F94CAA200FB283A /* AppseeCarthage.h in Headers */ = {isa = PBXBuildFile; fileRef = F325F6D51F94CA7C00FB283A /* AppseeCarthage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F3AA2DC821B18E3C007DC65C /* Appsee.h in Headers */ = {isa = PBXBuildFile; fileRef = F3AA2DC621B18E3B007DC65C /* Appsee.h */; };
+		F3AA2DC921B18E3C007DC65C /* Appsee in Frameworks */ = {isa = PBXBuildFile; fileRef = F3AA2DC721B18E3C007DC65C /* Appsee */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +28,10 @@
 		F325F6C61F94C9E300FB283A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F325F6C81F94C9E800FB283A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F325F6CA1F94C9EE00FB283A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		F325F6D01F94CA5100FB283A /* Appsee.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Appsee.h; sourceTree = "<group>"; };
-		F325F6D11F94CA5100FB283A /* Appsee */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = Appsee; sourceTree = "<group>"; };
 		F325F6D41F94CA7C00FB283A /* AppseeCarthage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppseeCarthage.m; sourceTree = "<group>"; };
 		F325F6D51F94CA7C00FB283A /* AppseeCarthage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppseeCarthage.h; sourceTree = "<group>"; };
+		F3AA2DC621B18E3B007DC65C /* Appsee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Appsee.h; sourceTree = "<group>"; };
+		F3AA2DC721B18E3C007DC65C /* Appsee */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = Appsee; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,8 +42,8 @@
 				F325F6CB1F94C9EE00FB283A /* SystemConfiguration.framework in Frameworks */,
 				F325F6C91F94C9E800FB283A /* AVFoundation.framework in Frameworks */,
 				F325F6C71F94C9E300FB283A /* CoreGraphics.framework in Frameworks */,
-				F325F6D21F94CA5B00FB283A /* Appsee in Frameworks */,
 				F325F6C51F94C9DF00FB283A /* CoreMedia.framework in Frameworks */,
+				F3AA2DC921B18E3C007DC65C /* Appsee in Frameworks */,
 				F325F6C31F94C9DA00FB283A /* CoreVideo.framework in Frameworks */,
 				F325F6C11F94C9D300FB283A /* QuartzCore.framework in Frameworks */,
 			);
@@ -96,16 +96,16 @@
 		F325F6CE1F94CA3B00FB283A /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				F325F6D11F94CA5100FB283A /* Appsee */,
-				F325F6CF1F94CA5100FB283A /* Headers */,
+				F3AA2DC721B18E3C007DC65C /* Appsee */,
+				F3AA2DC521B18E3B007DC65C /* Headers */,
 			);
 			path = Library;
 			sourceTree = "<group>";
 		};
-		F325F6CF1F94CA5100FB283A /* Headers */ = {
+		F3AA2DC521B18E3B007DC65C /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				F325F6D01F94CA5100FB283A /* Appsee.h */,
+				F3AA2DC621B18E3B007DC65C /* Appsee.h */,
 			);
 			path = Headers;
 			sourceTree = "<group>";
@@ -117,7 +117,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F325F6D31F94CA6000FB283A /* Appsee.h in Headers */,
+				F3AA2DC821B18E3C007DC65C /* Appsee.h in Headers */,
 				F325F6D71F94CAA200FB283A /* AppseeCarthage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

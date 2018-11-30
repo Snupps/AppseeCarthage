@@ -1,6 +1,6 @@
 //
 //  Appsee.h
-//  Appsee v2.4.5
+//  Appsee v2.4.6
 //
 //  Copyright (c) 2018 Shift 6 Ltd. All rights reserved.
 //
@@ -211,7 +211,6 @@ This method should be usually called right after the start: method.
  * @param delegate an instance of AppseeDelegate
  */
 +(void)setDelegate:(id<AppseeDelegate>)delegate;
-
 
 @end
 
