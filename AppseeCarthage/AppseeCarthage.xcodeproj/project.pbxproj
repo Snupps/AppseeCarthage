@@ -15,7 +15,7 @@
 		F325F6CB1F94C9EE00FB283A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F325F6CA1F94C9EE00FB283A /* SystemConfiguration.framework */; };
 		F325F6D61F94CA7C00FB283A /* AppseeCarthage.m in Sources */ = {isa = PBXBuildFile; fileRef = F325F6D41F94CA7C00FB283A /* AppseeCarthage.m */; };
 		F325F6D71F94CAA200FB283A /* AppseeCarthage.h in Headers */ = {isa = PBXBuildFile; fileRef = F325F6D51F94CA7C00FB283A /* AppseeCarthage.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F3AA2DC821B18E3C007DC65C /* Appsee.h in Headers */ = {isa = PBXBuildFile; fileRef = F3AA2DC621B18E3B007DC65C /* Appsee.h */; };
+		F3AA2DC821B18E3C007DC65C /* Appsee.h in Headers */ = {isa = PBXBuildFile; fileRef = F3AA2DC621B18E3B007DC65C /* Appsee.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F3AA2DC921B18E3C007DC65C /* Appsee in Frameworks */ = {isa = PBXBuildFile; fileRef = F3AA2DC721B18E3C007DC65C /* Appsee */; };
 /* End PBXBuildFile section */
 
